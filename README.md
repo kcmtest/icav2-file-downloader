@@ -1,6 +1,6 @@
 # ICAV2 File Downloader
 
-A Python utility script for downloading files from ICAV2 projects based on file patterns and extensions. This tool is particularly useful for batch downloading specific file types from ICAV2 projects.
+A Python utility script for downloading files from ICAV2 projects based on file patterns and extensions. This tool is particularly useful for batch downloading specific file types from  illumina connected analytics projects using icav2 cli tool.
 
 ## Features
 
@@ -8,13 +8,13 @@ A Python utility script for downloading files from ICAV2 projects based on file 
 - Filter files by single or double extensions (e.g., `.bed`, `.vcf.gz`)
 - Interactive confirmation before downloading
 - Batch download multiple files
-- JSON output support
+- JSON output 
 
 ## Prerequisites
 
 - Python 3.6 or higher
 - ICAV2 CLI tool installed and configured
-- Valid ICAV2 project access and project ID
+- Valid illumina connected analytics project access and project ID
 
 ## Installation
 
@@ -33,7 +33,7 @@ Basic syntax:
 python KCM_ICAv2.py PROJECT_ID [FILE_PATTERNS ...] --extensions [EXTENSIONS ...]
 ```
 
-### Real-world Example
+### Tes Example
 
 To download .bed and .vcf.gz files containing "Seraseq-v2 Brain" in their names:
 ```bash
@@ -52,7 +52,7 @@ This command will:
 
 - `PROJECT_ID`: Your ICAV2 project identifier (UUID format)
 - `FILE_PATTERNS`: One or more file name patterns to search for (use quotes for patterns with spaces)
-- `--extensions`: File extensions to filter by (include the dot, e.g., .bed .vcf.gz)
+- `--extensions`: File extensions to filter by (example., .bed .vcf.gz)
 
 ## Error Handling
 
