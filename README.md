@@ -33,11 +33,23 @@ Basic syntax:
 python KCM_ICAv2.py PROJECT_ID [FILE_PATTERNS ...] --extensions [EXTENSIONS ...]
 ```
 
-### Tes Example
+### Test Example
 
 To download .bed and .vcf.gz files containing "Seraseq-v2 Brain" in their names:
 ```bash
 python KCM_ICAv2.py dfd7b3d4-0a20-4614-b587-6068d4c9caa3 "Seraseq-v2 Brain" --extensions .bed .vcf.gz
+
+python added_func_V3.py dfd7b3d4-0a20-4614-b587-6068d4c9caa3 "Brain HD798" --extensions .bed .bai --runs SA500LB_NXP82_LR1
+59
+
+Found 5 matching files:
+- HD798-10ng-E07C-G12.target_bed_somatic_callable_regions.bed (Run: SA500LB_NXP82_LR159_demux3_U7N1Y143_CTGTCTCTTATACACATCT_downsampledfastq-remaining-analysis-4-b735dbac-3849-42bc-981d-1421b2c3a9bc)
+- HD798-10ng-E07C-G12.wgs_somatic_callable_regions.bed (Run: SA500LB_NXP82_LR159_demux3_U7N1Y143_CTGTCTCTTATACACATCT_downsampledfastq-remaining-analysis-4-b735dbac-3849-42bc-981d-1421b2c3a9bc)
+- HD798-10ng-E07C-G12.target_bed_cov_report.bed (Run: SA500LB_NXP82_LR159_demux3_U7N1Y143_CTGTCTCTTATACACATCT_downsampledfastq-remaining-analysis-4-b735dbac-3849-42bc-981d-1421b2c3a9bc)
+- HD798-10ng-E07C-G12.target_bed_read_cov_report.bed (Run: SA500LB_NXP82_LR159_demux3_U7N1Y143_CTGTCTCTTATACACATCT_downsampledfastq-remaining-analysis-4-b735dbac-3849-42bc-981d-1421b2c3a9bc)
+- HD798-10ng-E07C-G12_tumor.bam.bai (Run: SA500LB_NXP82_LR159_demux3_U7N1Y143_CTGTCTCTTATACACATCT_downsampledfastq-remaining-analysis-4-b735dbac-3849-42bc-981d-1421b2c3a9bc)
+
+Are you sure you want to download these files? (y/N): n
 ```
 
 This command will:
